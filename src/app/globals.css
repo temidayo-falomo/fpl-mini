@@ -19,7 +19,9 @@
 }
 
 body {
-  background: #000;
+  background: #fff;
+  color: #000;
+  overflow: hidden;
 }
 
 .glass {
@@ -27,4 +29,16 @@ body {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.ingredients::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+.ingredients::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.ingredients::-webkit-scrollbar-thumb {
+  background-color: #5243c2;
 }
